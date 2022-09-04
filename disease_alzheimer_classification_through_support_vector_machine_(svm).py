@@ -73,5 +73,7 @@ print('Accuracy: ', accuracy)
 print('Prediction is: ', categories[prediction[0]])
 
 da_predict = xtest[0].reshape(208,176)
+lb_predict = ytest[0]
 plt.imshow(da_predict, cmap='gray')
 plt.show()
+print('Label: ', lb_predict)
